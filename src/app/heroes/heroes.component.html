@@ -1,0 +1,6 @@
+<ul class="heroes">
+    <li *ngFor="let element of heroes" (click)="onClick(element)" [class.selected]="element === selectHero"><span class="badge">{{element.id}}</span> {{element.name}} </li>
+</ul>
+<div *ngIf="selectHero">
+    <app-hero-detail [selectHero]="selectHero"></app-hero-detail>
+</div>
