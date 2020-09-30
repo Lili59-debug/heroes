@@ -12,7 +12,7 @@ export class HeroesComponent implements OnInit {
   @Input() name:String;
   
   heroes : any[];
-  selectHero;
+  
 
   constructor(private dataService: DataService) {
     
@@ -22,8 +22,5 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.dataService.heroes;
   }
 
-  onClick(argument1) {
-    this.selectHero = argument1;
-  }
-
+  
 }

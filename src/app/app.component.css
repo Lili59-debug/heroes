@@ -1,0 +1,11 @@
+a {
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: #3f525c;
+}

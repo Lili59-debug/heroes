@@ -1,3 +1,4 @@
-<h2>{{ selectHero.name | uppercase }} Details</h2>
-<p>id: {{selectHero.id}}<br>
-name: <input type="text" class="form-control" [(ngModel)]="selectHero.name"></p>
+<h2>{{ name }} details!</h2>
+<p>id: {{id}}<br>
+name: <input type="text" class="form-control" [(ngModel)]="name"></p>
+<button (click)="goBack()">Back</button>

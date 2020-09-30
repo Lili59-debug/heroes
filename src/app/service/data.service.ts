@@ -11,6 +11,12 @@ export class DataService {
         { id: 18, name : 'Dr IQ'},
         { id: 19, name : 'Magma'},
         { id: 20, name : 'Tornado'}
-      ]
-      
+      ];
+
+getPerso(id: number) {
+  const persos = this.heroes.find((s) => {
+    return s.id === id;
+  });
+  return persos;
+}
 }
